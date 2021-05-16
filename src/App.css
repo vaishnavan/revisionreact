@@ -1,38 +1,59 @@
-.App {
+.active{
+  background-color: red ;
+}
+.image_show img{
+  width: 300px;
+  height: 200px;
+  
+}
+.image_show{
+  margin: 20px 0;
+}
+.img_main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.myImage_btn{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myImage_btn button{
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.myImage_search{
+  text-align: center;
+  margin: 30px 0;
+}
+.myImage_search input{
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid blue;
+  outline: none;
+}
+.image_error h3{
+  text-align: center;
+}
+.image_tag span{
+  display: block;
+  text-align: center;
+  background-color: rgb(219, 216, 216);
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media (max-width:600px) {
+  .myImage_btn button{
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .myImage_search input{
+    width: 250px;
   }
 }
